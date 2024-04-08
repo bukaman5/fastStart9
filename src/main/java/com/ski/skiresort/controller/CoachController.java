@@ -52,6 +52,10 @@ public class CoachController {
         this.coachService.deleteById(coachId);
         return HttpStatus.OK;
     }
+    @RequestMapping("/")
+    public String getIndex(){
+        return "index.html";
+    }
 
 
 }
